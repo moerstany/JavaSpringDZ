@@ -3,7 +3,7 @@ package com.topak.springapp;
 public class Автомобиль {
     String Двигатель;
     String Трансмиссия;
-    String Колеса;
+    String Колесо;
     String Кузов;
     Double Стоимость;
     String Бренд;
@@ -13,7 +13,7 @@ public class Автомобиль {
     public Автомобиль() {
         Двигатель = "NoName";
         Трансмиссия = "NoName";
-        Колеса = "NoName";
+        Колесо = "NoName";
         Кузов = "NoName";
         Стоимость=0.00;
         Бренд = "NoName";
@@ -21,10 +21,10 @@ public class Автомобиль {
         Наценка=0;
     }
 
-    public Автомобиль (String Двигатель, String Трансмиссия, String Колеса, String Кузов, double Стоимость, String Бренд, String Название , Integer Наценка) {
+    public Автомобиль (String Двигатель, String Трансмиссия, String Колесо, String Кузов, double Стоимость, String Бренд, String Название , Integer Наценка) {
         this.Двигатель = Двигатель;
         this.Трансмиссия = Трансмиссия;
-        this.Колеса = Колеса;
+        this.Колесо = Колесо;
         this.Кузов = Кузов;
         this.Стоимость=Стоимость;
         this.Бренд = Бренд;
@@ -40,8 +40,8 @@ public class Автомобиль {
         return Трансмиссия;
     }
 
-    public String getКолеса() {
-        return Колеса;
+    public String getКолесо() {
+        return Колесо;
     }
 
     public String getКузов() {
@@ -74,8 +74,8 @@ public class Автомобиль {
         Трансмиссия = трансмиссия;
     }
 
-    public void setКолеса(String колеса) {
-        Колеса = колеса;
+    public void setКолесо(String колесо) {
+        Колесо = колесо;
     }
 
     public void setКузов(String кузов) {
@@ -99,6 +99,9 @@ public class Автомобиль {
     }
 
 
-
+    @Override
+    public  String toString() {
+        return this.Бренд + "|" + this.Название + "|" + this.Двигатель + "|" + this.Трансмиссия + "|" + this.Колесо + " | " + this.Кузов + " | " + this.Стоимость + " | " + this.Наценка;
+    }
 
 }

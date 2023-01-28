@@ -7,10 +7,39 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="aвтомобиль" class="com.topak.springapp.Автомобиль"></bean>
-    <bean id="двигатель" class="com.topak.springapp.Двигатель"></bean>
-    <bean id="колесо" class="com.topak.springapp.Колесо"></bean>
-    <bean id="кузов" class="com.topak.springapp.Кузов"></bean>
-    <bean id="трансмиссия" class="com.topak.springapp.Трансмиссия"></bean>
+    <bean id="aвтомобиль" class="com.topak.springapp.Автомобиль">
+        <property name="бренд" value="SsangYong"/>
+        <property name="двигатель" value="Arcteco 150"/>
+        <property name="трансмиссия" value="AKPP 5"/>
+        <property name="стоимость" value="850000.00"/>
+        <property name="колесо" value="Mishlein"/>
+        <property name="кузов" value="Crossover"/>
+        <property name="название" value="Rekston"/>
+        <property name="наценка" value="20"/>
+    </bean>
+    <bean id="двигатель" class="com.topak.springapp.Двигатель">
+        <property name="название" value="Arcteco 150"/>
+        <property name="мощность" value="150"/>
+        <property name="объем" value="2.00"/>
+        <property name="вес" value="80"/>
+        <property name="цена" value="90000.00"/>
+    </bean>
+    <bean id="колесо" class="com.topak.springapp.Колесо">
+        <property name="название" value="Mishlein"/>
+        <property name="диаметр" value="18.00"/>
+        <property name="вес" value="10"/>
+        <property name="цена" value="8500.00"/>
+    </bean>
+    <bean id="кузов" class="com.topak.springapp.Кузов">
+        <property name="название" value="SsangYong 5"/>
+        <property name="вес" value="500"/>
+        <property name="цена" value="250000.00"/>
+    </bean>
+    <bean id="трансмиссия" class="com.topak.springapp.Трансмиссия">
+        <property name="тип" value="AKPP"/>
+        <property name="колПередач" value="5"/>
+        <property name="вес" value="60"/>
+        <property name="цена" value="100000.00"/>
+    </bean>
 
 </beans>
