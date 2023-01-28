@@ -6,4 +6,11 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="aвтомобиль" class="com.topak.springapp.Автомобиль"></bean>
+    <bean id="двигатель" class="com.topak.springapp.Двигатель"></bean>
+    <bean id="колесо" class="com.topak.springapp.Колесо"></bean>
+    <bean id="кузов" class="com.topak.springapp.Кузов"></bean>
+    <bean id="трансмиссия" class="com.topak.springapp.Трансмиссия"></bean>
+
 </beans>
